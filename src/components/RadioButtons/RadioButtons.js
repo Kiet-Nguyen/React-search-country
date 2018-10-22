@@ -8,17 +8,15 @@ const radioButtonsData = [
     buttonID: 'starting-word', 
     buttonValue: 'start', 
     buttonLabel: 'Starting word',
-    defaultChecked: 'true',
   },
   {
     buttonID: 'any-word', 
     buttonValue: 'any', 
     buttonLabel: 'Any word',
-    defaultChecked: null, 
   }
 ];
 
-const RadioButtons = ({ changed, clicked }) => (
+const RadioButtons = ({ changedSearchForm }) => (
   <div className={ classes.Container }>
     { radioButtonsData.map((button, buttonIndex) => (
       <RadioButton
@@ -26,8 +24,7 @@ const RadioButtons = ({ changed, clicked }) => (
         buttonID={ button.buttonID }
         buttonValue={ button.buttonValue }
         buttonLabel={ button.buttonLabel }
-        buttonChanged={ changed }
-        buttonClicked={ clicked }
+        buttonChanged={ changedSearchForm }
       />
     )) }
   </div>

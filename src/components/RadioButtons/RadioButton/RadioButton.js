@@ -2,16 +2,18 @@ import React from 'react';
 
 import classes from './RadioButton.module.css';
 
-const RadioButton = ({ buttonID, buttonValue, buttonLabel, buttonChecked, buttonChanged, buttonClicked }) => (
+const RadioButton = ({ buttonID, buttonValue, buttonLabel, buttonChanged }) => (
   <div className={ classes.RadioButton }>
     <input 
       type="radio" 
-      id={buttonID} 
+      id={ buttonID } 
       name="radioButton" 
-      value={buttonValue} 
+      value={ buttonValue } 
       onChange={ buttonChanged }
-      onClick={buttonClicked} />
-    <label htmlFor={ buttonID } className={ classes.Input_Label }>{ buttonLabel }</label>
+    />
+    <label htmlFor={ buttonID } className={ classes.Input_Label }>
+      { buttonLabel }
+    </label>
   </div>
 );
 

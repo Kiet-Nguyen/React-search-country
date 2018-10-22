@@ -28,7 +28,7 @@ const SearchResults = ({ data }) => {
     <div className={ classes.Countries }>
       {data.map(country => {
         return (
-          <div key={ country } className={classes.Country} style={{ backgroundColor: randomHexaNumberGenerator() }}>
+          <div key={ country } className={ classes.Country } style={{ backgroundColor: randomHexaNumberGenerator() }}>
             <span className={ classes.Text_color }>{ country }</span>
           </div>
         );
