@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './RadioButton.module.css';
 
-const RadioButton = ({ buttonID, buttonValue, buttonLabel, buttonChecked, buttonChanged, clicked }) => (
+const RadioButton = ({ buttonID, buttonValue, buttonLabel, buttonChecked, buttonChanged, buttonClicked }) => (
   <div className={ classes.RadioButton }>
     <input 
       type="radio" 
@@ -10,7 +10,7 @@ const RadioButton = ({ buttonID, buttonValue, buttonLabel, buttonChecked, button
       name="radioButton" 
       value={buttonValue} 
       onChange={ buttonChanged }
-      onClick={clicked} />
+      onClick={buttonClicked} />
     <label htmlFor={ buttonID } className={ classes.Input_Label }>{ buttonLabel }</label>
   </div>
 );

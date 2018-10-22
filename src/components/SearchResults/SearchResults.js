@@ -23,10 +23,10 @@ const randomHexaNumberGenerator = () => {
   return randomColor + hexColor;
 };
 
-const SearchResults = ({ array }) => {
+const SearchResults = ({ data }) => {
   return (
     <div className={ classes.Countries }>
-      {array.map(country => {
+      {data.map(country => {
         return (
           <div key={ country } className={classes.Country} style={{ backgroundColor: randomHexaNumberGenerator() }}>
             <span className={ classes.Text_color }>{ country }</span>

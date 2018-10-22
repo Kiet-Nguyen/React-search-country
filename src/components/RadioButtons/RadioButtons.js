@@ -18,7 +18,7 @@ const radioButtonsData = [
   }
 ];
 
-const RadioButtons = ({ changed }) => (
+const RadioButtons = ({ changed, clicked }) => (
   <div className={ classes.Container }>
     { radioButtonsData.map((button, buttonIndex) => (
       <RadioButton
@@ -27,6 +27,7 @@ const RadioButtons = ({ changed }) => (
         buttonValue={ button.buttonValue }
         buttonLabel={ button.buttonLabel }
         buttonChanged={ changed }
+        buttonClicked={ clicked }
       />
     )) }
   </div>

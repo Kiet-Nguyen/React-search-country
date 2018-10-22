@@ -10,7 +10,6 @@ class SearchForm extends Component {
 
   onChangeHandler = (e) => {
     const buttonValue = e.target.value;
-    
     // Set maxlength for input field
     if (buttonValue === 'start') {
       this.setState({ inputLength: 1 });
@@ -21,20 +20,21 @@ class SearchForm extends Component {
 
   render() {
     return (
-      <section className={classes.SearchForm}>
+      <section className={ classes.SearchForm }>
         <p className="mb-xs">Search a country with:</p>
         <form name="myForm" className="search-form">
           <RadionButtons 
             changed={ this.onChangeHandler } 
             clicked={ this.props.startWordClicked }/>
 
-          <div className={classes.Search_Field}>
+          <div className={ classes.Search_Field }>
             <input 
               type="text" 
               name="searchInput" 
               maxLength={ this.state.inputLength} 
               placeholder="Choose a method to search..." 
-              className={classes.Text_Input} />
+              className={ classes.Text_Input }
+              onKeyUp={ this.props.keyUp } />
           </div>
         </form>
       </section>
