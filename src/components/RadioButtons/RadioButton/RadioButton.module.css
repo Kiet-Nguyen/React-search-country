@@ -1,0 +1,25 @@
+.RadioButton:first-child {
+  margin-right: 1rem;
+}
+
+.RadioButton .Input_Label {
+  display: inline-block;
+  width: 10rem;
+  background-color: var(--moutain-meadow);
+  margin-bottom: 1rem;
+  padding: 1.2rem 0;
+}
+
+.RadioButton .Input_Label:hover {
+  background-color: var(--polished-pine);
+  cursor: pointer;
+}
+
+.RadioButton input[type="radio"] {
+  display: none;
+}
+
+.RadioButton input[type="radio"]:checked+.Input_Label {
+  background-color: var(--polished-pine);
+  cursor: pointer;
+}

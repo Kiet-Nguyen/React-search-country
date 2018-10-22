@@ -1,0 +1,15 @@
+.Search_Field {
+  margin-top: 1.5rem;
+}
+
+.Text_Input {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.Text_Input:focus::placeholder {
+  color: transparent;
+}

@@ -1,0 +1,13 @@
+.Countries {
+  margin-top: 2rem;
+}
+
+.Country {
+  margin-top: 5px;
+  padding: 2.5rem 2rem;
+  font-size: 1.2rem;
+}
+
+.Text_color {
+  mix-blend-mode: color-burn;
+}

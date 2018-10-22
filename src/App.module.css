@@ -1,0 +1,19 @@
+.App_outerContainer {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  background-image:
+    linear-gradient(rgba(53, 164, 206, 0.5), rgba(53, 206, 141, 0.5)),
+    url(./assets/images/world-map.jpg);
+}
+
+.App_innerContainer {
+  width: 70rem;
+  max-width: 100%;
+  min-height: 80vh;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--glitter);
+  opacity: 0.85;
+  text-align: center;
+}

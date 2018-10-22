@@ -1,0 +1,12 @@
+.Header {
+  margin-bottom: 2rem;
+}
+
+.Header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.Header p {
+  margin-bottom: 1rem;
+}
