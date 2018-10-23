@@ -91,6 +91,18 @@ video {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 80%;
+  }
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

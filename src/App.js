@@ -10,8 +10,23 @@ class App extends Component {
   state = {
     inputLength: 0,
     originalData: countries,
-    count: 0,
   }
+
+  // Display a nummer of countries match search input
+  countSearchRes = (countNum, value) => {
+    let tobe = '';
+    let singOrPlural = '';
+
+    if (countNum >= 0 && countNum <= 1) {
+      tobe = 'is'; 
+      singOrPlural = 'country';
+    } else {
+      tobe = 'are';
+      singOrPlural = 'countries';
+    }
+
+    document.querySelector('.js-result-count').textContent = `There ${tobe} ${countNum} ${singOrPlural} starting with ${value}`;
+  };
 
   onChangeHandler = e => {
     const buttonValue = e.target.value;
@@ -37,8 +52,8 @@ class App extends Component {
       }
       return filteredData;
     });
-    // countSearchRes(count, inputValue);
-    this.setState({ originalData: filteredData, count: resultCount });
+    this.setState({ originalData: filteredData });
+    this.countSearchRes(resultCount, inputValue);
   }
 
   render() {

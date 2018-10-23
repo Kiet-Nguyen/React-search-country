@@ -6,7 +6,7 @@ const Header = ({ title, description }) => (
   <header className={ classes.Header }>
     <h1>{ title }</h1>
     <p>{ description }</p>
-    <p></p>
+    <p className="js-result-count"></p>
   </header>
 );
 
